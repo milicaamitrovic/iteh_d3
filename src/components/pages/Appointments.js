@@ -23,7 +23,7 @@ function Appointments({ data, deleteAnAppointment }) {
                 onClick={() => {
                   window.location.href = "/danceservices";
                 }}>
-                PRONAĐI SVOJ IDEALNI PLESNI STIL!
+                PRONAĐI SVOJ IDEALAN PLESNI STIL!
               </Button>
             </div>
           </div>

@@ -2,8 +2,32 @@ import React from "react";
 import "./Footer.css";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import Swal from "sweetalert2";
 
 function Footer() {
+  const [buttonClick, setButtonClick] = useState("");
+
+  const onClick = () => {
+    if (buttonClick !== "") {
+      setButtonClick("");
+      setTimeout(() => {
+        //alert('Thank you for subscribing!');
+        Swal.fire({
+          title: "Tvoja prijava na naš newsletter je uspešna.",
+          text: "Hvala na interesovanju!",
+          icon: "success",
+          confirmButtonText: "OK",
+          confirmButtonColor: "indianred",
+        });
+      }, 10);
+    }
+  };
+
+  const onChange = (e) => {
+    setButtonClick(e.target.value);
+  };
+
   return (
     <div className="footer-container">
       <section className="footer-subscription">
@@ -20,8 +44,10 @@ function Footer() {
               name="email"
               type="email"
               placeholder="Unesi svoju email adresu."
+              value={buttonClick}
+              onChange={onChange}
             />
-            <Button buttonStyle="btn--outline" link="/">
+            <Button buttonStyle="btn--outline" onClick={onClick} link={"#"}>
               Prijavi se!
             </Button>
           </form>
@@ -37,41 +63,46 @@ function Footer() {
           </div>
           <small class="website-rights">DANCE STUDIO SPARKLE © 2023</small>
           <div class="social-icons">
-            <Link
+            <a
               class="social-icon-link facebook"
-              to="/"
+              href="https://www.facebook.com/"
               target="_blank"
+              rel="noreferrer"
               aria-label="Facebook">
-              <i class="fab fa-facebook-f" />
-            </Link>
-            <Link
+              <i class="fa-brands fa-facebook" />
+            </a>
+            <a
               class="social-icon-link instagram"
-              to="/"
+              href="https://www.instagram.com/"
               target="_blank"
+              rel="noreferrer"
               aria-label="Instagram">
-              <i class="fab fa-instagram" />
-            </Link>
-            <Link
+              <i class="fa-brands fa-instagram" />
+            </a>
+            <a
               class="social-icon-link youtube"
-              to="/"
+              href="https://www.youtube.com/"
               target="_blank"
+              rel="noreferrer"
               aria-label="Youtube">
-              <i class="fab fa-youtube" />
-            </Link>
-            <Link
+              <i class="fa-brands fa-youtube" />
+            </a>
+            <a
               class="social-icon-link twitter"
-              to="/"
+              href="https://twitter.com/"
               target="_blank"
+              rel="noreferrer"
               aria-label="Twitter">
-              <i class="fab fa-twitter" />
-            </Link>
-            <Link
+              <i class="fa-brands fa-x-twitter" />
+            </a>
+            <a
               class="social-icon-link twitter"
-              to="/"
+              href="https://www.linkedin.com/"
               target="_blank"
+              rel="noreferrer"
               aria-label="LinkedIn">
-              <i class="fab fa-linkedin" />
-            </Link>
+              <i class="fa-brands fa-linkedin" />
+            </a>
           </div>
         </div>
       </section>
