@@ -197,7 +197,7 @@ function App() {
 
   return (
     <BrowserRouter className="App">
-      <Navbar></Navbar>
+      <Navbar num={appNum}></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route

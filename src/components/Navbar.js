@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar({ num }) {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -40,6 +40,11 @@ function Navbar() {
                 onClick={closeMobileMenu}>
                 ZAKAZANI TERMINI
               </Link>
+            </li>
+            <li className="nav-item">
+              <div>
+                <p className="nav-links">{num}</p>
+              </div>
             </li>
           </ul>
         </div>

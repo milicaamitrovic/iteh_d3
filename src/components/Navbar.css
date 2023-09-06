@@ -43,10 +43,13 @@
   width: 60vw;
   justify-content: end;
   margin-right: 2rem;
+  align-items: center;
 }
 
 .nav-item {
   height: 80px;
+  display: grid;
+  align-items: center;
 }
 
 .nav-links {
