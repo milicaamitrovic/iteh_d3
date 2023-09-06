@@ -34,10 +34,11 @@ function MainSection() {
         <p>Ples je magija koja se dešava kada pustite srce da vas vodi.</p>
         <div className="main-btns">
           <Button
-            className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
-            link="/danceservices">
+            onClick={() => {
+              window.location.href = "/danceservices";
+            }}>
             PRIDRUŽI NAM SE!
           </Button>
         </div>

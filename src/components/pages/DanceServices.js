@@ -13,7 +13,7 @@ function DanceServices({
       <Cards
         data1={services1}
         data2={services2}
-        title="PRONAĐI SVOJ PLESNI STIL!"
+        title="PRONAĐI SVOJ IDEALNI PLESNI STIL!"
         type="danceservices"
         makeAnAppointment={makeAnAppointment}
         star1={star1}
