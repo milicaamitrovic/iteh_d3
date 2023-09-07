@@ -8,7 +8,7 @@ import Image2 from "../assets/image2.PNG";
 import Image3 from "../assets/image3.PNG";
 
 function MainSection() {
-  const clients = [
+  const instructors = [
     {
       name: "Uroš Janković",
       text: "Ples je za mene sinonim za ljubav, prečica za sreću i najlakši način da učiniš nešto dobro za sebe.",
@@ -67,11 +67,11 @@ function MainSection() {
           zajedno stvarati čaroliju plesa.
         </p>
       </div>
-      <div className="main-clients">
+      <div className="main-instructors">
         <Cards
           title="NAŠI PLESNI INSTRUKTORI"
-          data1={clients}
-          type="clients"></Cards>
+          data1={instructors}
+          type="instructors"></Cards>
       </div>
     </>
   );

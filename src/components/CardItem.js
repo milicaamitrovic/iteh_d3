@@ -19,7 +19,7 @@ function CardItem({
         <div className="cards__item__link">
           <figure
             className="cards__item__pic-wrap"
-            data-category={type === "clients" ? "“" : name}>
+            data-category={type === "instructors" ? "“" : name}>
             <img
               className="cards__item__img"
               src={src}
@@ -28,12 +28,12 @@ function CardItem({
           </figure>
           <div className="cards__item__info">
             <p className="cards__item__text">{text}</p>
-            {type === "clients" ? (
+            {type === "instructors" ? (
               <h5 className="cards__item__title">{name}</h5>
             ) : (
               <></>
             )}
-            {type === "clients" ? (
+            {type === "instructors" ? (
               <></>
             ) : (
               <div className="star-container">
