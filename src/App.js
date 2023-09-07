@@ -20,7 +20,7 @@ function App() {
       name: "Salsa",
       added: false,
       date: "4. septembar 2023. 19:00h",
-      text: "Salsa je strastveni latinoamerički ples koji odiše ritmom, energijom i senzualnošću. Nastala u Karibima, salsa je postala globalni fenomen zbog svoje zarazne muzike i brzih pokreta. Ovaj ples je izuzetno popularan zbog svoje sposobnosti da kroz dinamične okrete izrazi ljubav, radost i slobodu. Nema boljeg načina da se oslobodite i uživate u trenutku nego da zaplešete salsa ritmove.",
+      text: "Salsa je latinoamerički ples koji odiše ritmom, energijom i senzualnošću. Nastala u Karibima, salsa je postala globalni fenomen zbog svoje zarazne muzike i brzih pokreta. Ovaj ples je izuzetno popularan zbog svoje sposobnosti da kroz dinamične okrete izrazi ljubav, radost i slobodu. Nema boljeg načina da uživate u trenutku nego da zaplešete salsa ritmove.",
       src: "https://dancestudiosdubai.com/wp-content/uploads/2022/03/competition-42.jpg",
     },
     {
@@ -56,7 +56,7 @@ function App() {
       name: "Samba",
       added: false,
       date: "7. septembar 2023. 19:00h",
-      text: "Samba predstavlja popularan brazilski ples koji odražava energiju i duh karnevala u Rio de Žaneiru. Njegovi brzi ritmovi, živopisni kostimi i vesele melodije čine ga neodoljivim. Samba je ples radosti i spontanosti, koji poziva sve da se prepuste ritmu i veselju. Ovaj ples je sinonim za zabavu i slavi raznolikost brazilske kulture, donoseći osmeh na lica svih koji ga izvode i gledaju.",
+      text: "Samba je popularan brazilski ples koji odražava energiju i duh karnevala u Rio de Žaneiru. Njegovi brzi ritmovi, živopisni kostimi i vesele melodije čine ga neodoljivim. Samba je ples radosti i spontanosti, koji poziva sve da se prepuste ritmu i veselju. Ovaj ples je sinonim za zabavu i slavi raznolikost brazilske kulture, donoseći osmeh na lica svih koji ga izvode i gledaju.",
       src: "https://dancestudiosdubai.com/wp-content/uploads/2022/11/rumba1-1-1920x1982.jpg",
     },
     {
